@@ -80,8 +80,7 @@ public class OrderService {
                                 orderItem.getId(),
                                 orderItem.getProduct().getId(),
                                 orderItem.getQuantity(),
-                                orderItem.getPrice(),
-                                orderItem.getPrice().multiply(new BigDecimal(orderItem.getQuantity()))
+                                orderItem.getPrice()
                         ))
                         .toList(),
                 order.getCreatedAt()
